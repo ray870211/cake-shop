@@ -1,0 +1,64 @@
+@media (max-width: 575.99px)
+.navigation
+
+.header
+    background-color: black
+    display: flex
+    justify-content: end
+    align-items: center
+    border-bottom: 1px solid #fff
+    height: 140px
+    &
+        position: -webkit-sticky
+        // position: sticky
+        top: 0
+        z-index: 1
+        transition: 1s
+
+.logo
+    margin-right: auto
+    margin-left: 20px
+    color: #fff
+
+.navigation
+    text-decoration: none
+    color: #fff
+    margin: 10px
+
+.bars
+    height: 25px
+    padding: 10px
+    color: rgb(0, 0, 0)
+    a
+        color: currentColor
+
+.header-change
+    display: flex
+    justify-content: end
+    align-items: center
+    background-color: rgb(255, 255, 255) !important
+    border-bottom: 1px solid rgb(0,0,0)
+
+.hamburger
+    position: relative
+    width: 20px
+    height: 30px
+    cursor: pointer
+    pointer-events: auto
+    transition: all .3s
+    div
+        position: absolute
+        top: 0
+        right: 0
+        bottom: 0
+        left: 0
+        margin: auto
+        width: 10px
+        height: 1px
+        background-color: #fff
+        transform: translateZ(0)
+        transition: all .3s
+    div:nth-child(1)
+        top: -8px
+    div:nth-child(3)
+        top: 8px
