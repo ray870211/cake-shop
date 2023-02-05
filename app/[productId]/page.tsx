@@ -10,7 +10,7 @@ const fetchProduct = async (productId: string) => {
     const body = {
         "aaa": "aaa"
     }
-    const res = await fetch(`${process.env.URL}/api/getProduct`, { method: 'POST', body: JSON.stringify(body), next: { revalidate: 60 } })
+    const res = await fetch(`${process.env.VERCEL_URL}/api/getProduct`, { method: 'POST', body: JSON.stringify(body), next: { revalidate: 60 } })
     const products: Product[] = await res.json()
     return products
 }
