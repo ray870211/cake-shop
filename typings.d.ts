@@ -1,6 +1,5 @@
 export type Product = {
-    id: number;
+    price: number;
     title: string;
-    userId: string;
-    completed: boolean
+    class: string;
 }

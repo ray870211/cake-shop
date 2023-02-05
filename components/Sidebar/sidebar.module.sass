@@ -4,7 +4,7 @@
     height: 100vh
     background-color: #F7F4EB
     display: grid
-    grid-template-rows: 2fr 2fr 1fr
+    grid-template-rows: 1fr 2fr 1fr
     grid-auto-flow: row
     row-gap: 1rem
     //縮放功能
@@ -20,8 +20,13 @@
         max-width: 100%
         flex-direction: column
         a
-            // color: white
-            margin: 1rem
+            color: #AC8255
+            transition: 0.5s
+            margin: .3rem
+            &:hover
+                color: #c81432
 .lan
-    display: grid
-    grid-template-columns: 2fr 1fr 2fr
+    display: flex
+    justify-content: center
+    .navigation
+        padding: 1rem

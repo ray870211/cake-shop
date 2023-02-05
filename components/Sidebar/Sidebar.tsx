@@ -17,16 +17,22 @@ const Header = () => {
                     HOME
                 </Link>
                 <Link href="/">
-                    文章
+                    波士頓派
                 </Link>
                 <Link href="/">
-                    文章
+                    蜂蜜蛋糕
                 </Link>
                 <Link href="/">
-                    文章
+                    奶凍捲
                 </Link>
                 <Link href="/">
-                    文章
+                    生日蛋糕
+                </Link>
+                <Link href="/">
+                    彌月蛋糕
+                </Link>
+                <Link href="/">
+                    最新資訊
                 </Link>
             </div>
             <div className={style.lan}>

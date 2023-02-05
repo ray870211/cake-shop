@@ -2,20 +2,23 @@ import db from "../../utils/db";
 import type { NextApiRequest, NextApiResponse } from 'next'
 
 
-export default async (req:NextApiRequest, res:NextApiResponse) => {
+export default async (req: NextApiRequest, res: NextApiResponse) => {
+  const body = JSON.parse(req.body)
+  console.log("abc:" + body)
   const data = {
-    userId:"Ray",
-    id:1,
-    title:"abc",
-    completed:false
-
+    class: body.class,
+    product: {
+      id: 1,
+      title: body.title,
+      price: body.price,
+    }
   };
-  try{
-    const db_data = await db.collection("cities").doc("CA").set(data)
+  try {
+    const db_data = await db.collection("Products").doc(data.class).set(data.product)
     res.end(JSON.stringify(db_data))
-  } catch(err){
+  } catch (err) {
     console.log(err)
-    res.end
+    res.end()
   }
 };
 

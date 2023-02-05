@@ -7,7 +7,10 @@ type PageProps = {
 }
 
 const fetchProduct = async (productId: string) => {
-    const res = await fetch("http://localhost:3000/api/getProduct", { next: { revalidate: 60 } })
+    const body = {
+        "aaa": "aaa"
+    }
+    const res = await fetch("http://localhost:3000/api/getProduct", { method: 'POST', body: JSON.stringify(body), next: { revalidate: 60 } })
     const products: Product[] = await res.json()
     return products
 }

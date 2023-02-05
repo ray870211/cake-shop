@@ -1,4 +1,57 @@
-.mian
+.block
 
-  .sidebar
-  .banner
+  .block_header
+    display: flex
+    justify-content: space-between
+    width: 100%
+    padding: 1rem
+    align-items: center
+  
+  .block_container
+    margin: 20px
+    background-color: #C0B4A4
+    border-radius: 15px
+    .product_container
+      display: flex
+      padding: 20px
+      .product
+        margin: 10px
+        text-align: center
+        img
+          border-radius: 15px
+          filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25))
+        span
+          color: #ffffff
+          font-size: 1.2rem
+  .product_menu_container
+    margin: 20px
+    display: flex
+    flex-wrap: wrap
+    grid-gap: 12px
+    gap: 12px
+
+    & div:nth-child(-n+2)
+      flex-basis: calc( 0.5 *(100% - 12px))
+    & div
+      flex-basis: calc(.3333333333*(100% - 24px))
+
+    .item_inner
+      position: relative
+
+      .item_header
+        position: absolute
+        top: 24px
+        left: 24px
+        z-index: 100
+        p
+          font-size: 32px
+          color: #ffff
+      .item_image
+        overflow: hidden
+        border-radius: 15px
+
+        img
+          border-radius: 15px
+          transition: 0.5s
+          &:hover
+            transform: scale(1.2,1.2)
