@@ -27,7 +27,7 @@ function addProduct({ params: { productId } }: PageProps) {
     const fetchAddProduct = async () => {
         if (isLoading) {
             try {
-                const res = await fetch("http://localhost:3000/api/addProduct", { method: "POST", body: JSON.stringify(formData), next: { revalidate: 60 } })
+                const res = await fetch(`${process.env.URL}/api/addProduct`, { method: "POST", body: JSON.stringify(formData), next: { revalidate: 60 } })
                 setIsLoading(false)
             }
             catch (err) {
