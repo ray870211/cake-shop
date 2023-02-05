@@ -7,9 +7,9 @@ type PageProps = {
     }
 }
 
-
 function addProduct({ params: { productId } }: PageProps) {
     // JSON.parse(products)
+
     const [isLoading, setIsLoading] = useState(false)
     const [formData, setFormData] = useState({
     })
