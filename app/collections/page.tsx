@@ -86,14 +86,7 @@ export default function collections() {
                         priority={true}></Image>
                     <span>name</span>
                 </div>
-                <div className={style.product}>
-                    <Image src={require("../../assets/cake/12.jpg")}
-                        alt="Picture of the author"
-                        width={500}
-                        height={500}
-                        priority={true}></Image>
-                    <span>name</span>
-                </div>
+
             </div>
         </div>
     )
