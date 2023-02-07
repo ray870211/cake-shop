@@ -4,6 +4,7 @@ import Banner from 'components/Banner/Banner';
 import style from './page.module.sass'
 import Link from 'next/link';
 import Image from 'next/image'
+import Footer from "components/Footer/footer"
 // const fetchProduct = async (productId: string) => {
 //     const res = await fetch("http://localhost:3000/api/getProduct", { next: { revalidate: 60 } })
 //     const products: Product[] = await res.json()
@@ -24,28 +25,35 @@ async function Home() {
                 <div className={style.block_container}>
                     <div className={style.product_container}>
                         <div className={style.product}>
+                            <Link href='/1'>
+                                <Image src={require("../assets/cake/1.jpg")}
+                                    alt="Picture of the author"
+                                    width={500}
+                                    height={500}
+                                    priority={true}></Image>
+                            </Link>
 
-                            <Image src={require("../assets/cake/7R408817.jpg")}
-                                alt="Picture of the author"
-                                width={500}
-                                height={500}
-                                priority={true}></Image>
                             <span>name</span>
                         </div>
                         <div className={style.product}>
-                            <Image src={require("../assets/cake/7R408820.jpg")}
-                                alt="Picture of the author"
-                                width={500}
-                                height={500}
-                                priority={true}></Image>
+                            <Link href='/2'>
+                                <Image src={require("../assets/cake/2.jpg")}
+                                    alt="Picture of the author"
+                                    width={500}
+                                    height={500}
+                                    priority={true}></Image>
+                            </Link>
                             <span>name</span>
                         </div>
                         <div className={style.product}>
-                            <Image src={require("../assets/cake/7R408825.jpg")}
-                                alt="Picture of the author"
-                                width={500}
-                                height={500}
-                                priority={true}></Image>
+                            <Link href='/3'>
+                                <Image src={require("../assets/cake/3.jpg")}
+                                    alt="Picture of the author"
+                                    width={500}
+                                    height={500}
+                                    priority={true}></Image>
+                            </Link>
+
                             <span>name</span>
                         </div>
                     </div>
@@ -58,7 +66,7 @@ async function Home() {
                         <div className={style.product_menu_item}>
                             <div className={style.item_inner}>
                                 <div className={style.item_header}><p>巧克力</p></div>
-                                <div className={style.item_image}> <Image src={require("../assets/cake/7R408840.jpg")}
+                                <div className={style.item_image}> <Image src={require("../assets/cake/4.jpg")}
                                     alt="Picture of the author"
                                     width={500}
                                     height={500}
@@ -68,7 +76,7 @@ async function Home() {
                         <div className={style.product_menu_item}>
                             <div className={style.item_inner}>
                                 <div className={style.item_header}><p>原味</p></div>
-                                <div className={style.item_image}> <Image src={require("../assets/cake/7R408827.jpg")}
+                                <div className={style.item_image}> <Image src={require("../assets/cake/5.jpg")}
                                     alt="Picture of the author"
                                     width={500}
                                     height={500}
@@ -78,7 +86,7 @@ async function Home() {
                         <div className={style.product_menu_item}>
                             <div className={style.item_inner}>
                                 <div className={style.item_header}><p>蛋糕</p></div>
-                                <div className={style.item_image}> <Image src={require("../assets/cake/7R408830.jpg")}
+                                <div className={style.item_image}> <Image src={require("../assets/cake/6.jpg")}
                                     alt="Picture of the author"
                                     width={500}
                                     height={500}
@@ -88,7 +96,7 @@ async function Home() {
                         <div className={style.product_menu_item}>
                             <div className={style.item_inner}>
                                 <div className={style.item_header}><p>草莓</p></div>
-                                <div className={style.item_image}> <Image src={require("../assets/cake/7R408832.jpg")}
+                                <div className={style.item_image}> <Image src={require("../assets/cake/7.jpg")}
                                     alt="Picture of the author"
                                     width={500}
                                     height={500}
@@ -98,7 +106,7 @@ async function Home() {
                         <div className={style.product_menu_item}>
                             <div className={style.item_inner}>
                                 <div className={style.item_header}><p>草莓</p></div>
-                                <div className={style.item_image}> <Image src={require("../assets/cake/7R408834.jpg")}
+                                <div className={style.item_image}> <Image src={require("../assets/cake/8.jpg")}
                                     alt="Picture of the author"
                                     width={500}
                                     height={500}
@@ -109,6 +117,7 @@ async function Home() {
                 </div>
 
             </div>
+            <Footer></Footer>
         </>
 
     )

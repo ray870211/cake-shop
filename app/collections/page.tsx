@@ -7,7 +7,7 @@ export default function collections() {
             <h1>首頁/產品</h1>
             <div className={style.grid_container}>
                 <div className={style.product}>
-                    <Image src={require("../../assets/cake/7R408817.jpg")}
+                    <Image src={require("../../assets/cake/1.jpg")}
                         alt="Picture of the author"
                         width={500}
                         height={500}
@@ -15,7 +15,7 @@ export default function collections() {
                     <span>name</span>
                 </div>
                 <div className={style.product}>
-                    <Image src={require("../../assets/cake/7R408820.jpg")}
+                    <Image src={require("../../assets/cake/2.jpg")}
                         alt="Picture of the author"
                         width={500}
                         height={500}
@@ -23,7 +23,7 @@ export default function collections() {
                     <span>name</span>
                 </div>
                 <div className={style.product}>
-                    <Image src={require("../../assets/cake/7R408825.jpg")}
+                    <Image src={require("../../assets/cake/3.jpg")}
                         alt="Picture of the author"
                         width={500}
                         height={500}
@@ -31,7 +31,7 @@ export default function collections() {
                     <span>name</span>
                 </div>
                 <div className={style.product}>
-                    <Image src={require("../../assets/cake/7R408827.jpg")}
+                    <Image src={require("../../assets/cake/4.jpg")}
                         alt="Picture of the author"
                         width={500}
                         height={500}
@@ -39,7 +39,7 @@ export default function collections() {
                     <span>name</span>
                 </div>
                 <div className={style.product}>
-                    <Image src={require("../../assets/cake/7R408830.jpg")}
+                    <Image src={require("../../assets/cake/5.jpg")}
                         alt="Picture of the author"
                         width={500}
                         height={500}
@@ -47,7 +47,7 @@ export default function collections() {
                     <span>name</span>
                 </div>
                 <div className={style.product}>
-                    <Image src={require("../../assets/cake/7R408832.jpg")}
+                    <Image src={require("../../assets/cake/6.jpg")}
                         alt="Picture of the author"
                         width={500}
                         height={500}
@@ -55,7 +55,7 @@ export default function collections() {
                     <span>name</span>
                 </div>
                 <div className={style.product}>
-                    <Image src={require("../../assets/cake/7R408834.jpg")}
+                    <Image src={require("../../assets/cake/7.jpg")}
                         alt="Picture of the author"
                         width={500}
                         height={500}
@@ -63,7 +63,7 @@ export default function collections() {
                     <span>name</span>
                 </div>
                 <div className={style.product}>
-                    <Image src={require("../../assets/cake/7R408838.jpg")}
+                    <Image src={require("../../assets/cake/8.jpg")}
                         alt="Picture of the author"
                         width={500}
                         height={500}
@@ -71,7 +71,7 @@ export default function collections() {
                     <span>name</span>
                 </div>
                 <div className={style.product}>
-                    <Image src={require("../../assets/cake/7R408840.jpg")}
+                    <Image src={require("../../assets/cake/9.jpg")}
                         alt="Picture of the author"
                         width={500}
                         height={500}
@@ -79,7 +79,7 @@ export default function collections() {
                     <span>name</span>
                 </div>
                 <div className={style.product}>
-                    <Image src={require("../../assets/cake/7R408842.jpg")}
+                    <Image src={require("../../assets/cake/10.jpg")}
                         alt="Picture of the author"
                         width={500}
                         height={500}
@@ -87,7 +87,7 @@ export default function collections() {
                     <span>name</span>
                 </div>
                 <div className={style.product}>
-                    <Image src={require("../../assets/cake/7R408845.jpg")}
+                    <Image src={require("../../assets/cake/12.jpg")}
                         alt="Picture of the author"
                         width={500}
                         height={500}

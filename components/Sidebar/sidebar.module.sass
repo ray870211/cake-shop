@@ -1,32 +1,89 @@
-.left_sidebar
+.sidebar_container
+    position: relative
     position: fixed
     width: 240px
     height: 100vh
-    background-color: #F7F4EB
-    display: grid
-    grid-template-rows: 1fr 2fr 1fr
-    grid-auto-flow: row
-    row-gap: 1rem
-    //縮放功能
-    // transform: translate(-100%)
-    .logo
-        display: flex
-        justify-content: center
-        align-items: center
-    .navigation
-        display: flex
-        justify-content: center
-        align-items: center
-        max-width: 100%
-        flex-direction: column
-        a
-            color: #AC8255
-            transition: 0.5s
-            margin: .3rem
-            &:hover
-                color: #c81432
+
+    .hamburger
+        position: absolute
+        width: 3rem
+        height: 3rem
+        cursor: pointer
+        pointer-events: auto
+        transition: all .3s
+        right: 0px
+        z-index: 100
+        div
+            position: absolute
+            top: 0
+            right: 0
+            bottom: 0
+            left: 0
+            margin: auto
+            width: 20px
+            height: 2px
+            background-color: #000000
+            transform: translateZ(0)
+            transition: all .3s
+        div:nth-child(1)
+            top: -18px
+        div:nth-child(3)
+            top: 18px
+    .close_btn
+        position: absolute
+        width: 3rem
+        height: 3rem
+        cursor: pointer
+        pointer-events: auto
+        transition: all .3s
+        left: 0px
+        div
+            position: absolute
+            top: 0
+            right: 0
+            bottom: 0
+            left: 0
+            margin: auto
+            width: 20px
+            height: 2px
+            background-color: #000000
+            transform: translateZ(0)
+            transition: all .3s
+        div:nth-child(1)
+            transform: skewY(45deg)
+        div:nth-child(2)
+            display: none
+        div:nth-child(3)
+            transform: skewY(-45deg)
+    .left_sidebar
+        height: 100vh
+        transition: 1s
+        background-color: #F7F4EB
+        display: grid
+        grid-template-rows: 1fr 2fr 1fr
+        grid-auto-flow: row
+        row-gap: 1rem
+        .logo
+            display: flex
+            justify-content: center
+            align-items: center
+        .navigation
+            display: flex
+            justify-content: center
+            align-items: center
+            max-width: 100%
+            flex-direction: column
+            a
+                color: #AC8255
+                transition: 0.5s
+                margin: .3rem
+                &:hover
+                    color: #c81432
 .lan
     display: flex
     justify-content: center
     .navigation
         padding: 1rem
+
+.closed
+    transform: translate(-100%)
